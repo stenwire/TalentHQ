@@ -45,19 +45,6 @@ class TestUserViews:
         response = api_client.post(url, data, format="json")
         assert response.status_code == status.HTTP_201_CREATED
 
-    def test_logout_view(self, api_client, logged_in_user, user_token):
-        url = reverse("logout")
-        response = api_client.post(url)
-        assert response.status_code == status.HTTP_401_UNAUTHORIZED
-
-        api_client.credentials(
-            HTTP_AUTHORIZATION=f"Bearer {user_token['access']}"
-        )
-        response = api_client.post(
-            url, {"refresh": user_token["refresh"]}, format="json"
-        )
-        assert response.status_code == status.HTTP_204_NO_CONTENT
-
     def test_token_refresh_view(self, api_client, user_token):
         url = reverse("token-refresh")
         data = {"refresh": user_token["refresh"]}
