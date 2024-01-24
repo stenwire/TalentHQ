@@ -1,4 +1,4 @@
-# 🔐 jWT Token Authentication in DRF and Blog
+# 🔐 jWT Token Authentication in DRF Blog API
 
 ### ♨️API Docs:
 [Go-to swagger docs](http://localhost:8000/swagger/)
