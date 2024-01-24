@@ -3,13 +3,10 @@
 ### ♨️API Docs:
 [Go-to swagger docs](http://localhost:8000/swagger/)
 
-```shell
-[][][][][]     [][][][]     [][][][]
-[]        []   []     []    []
-[]        []   []  [] []    [][][][]
-[]        []   []    []     []
-[][][][][]     []     []    []
-```
+## To run test:
+  `make test`
+
+
 ### ⚒️ Tools:
 - DRF
 - Makefile
@@ -17,24 +14,26 @@
 
 # ⚙️ Setup
 
+```shell
+
 - clone repo
-```shell
+
 git clone <link to repo>
-```
+
 - Go into the folder
-```shell
+
 cd :\\path\\to\\cloned_repo
-```
+
 - install pipenv
-```shell
+
 pip install pipenv
-```
+
 - activate pipenv
-```shell
+
 make shell
-```
+
 - install dependencies
-```shell
+
 make install
 ```
 - Create a copy of `.env.example` and rename to `.env` then fill in the values
@@ -61,6 +60,3 @@ Then:
 
 >>> CustomUser.objects.create_user(email="youremail@example.com",username="johnDoe707", password="strongpassword")
 ```
-
-- To run est:
-  `make test`
