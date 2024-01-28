@@ -1,16 +1,15 @@
 # 🔐 jWT Token Authentication in DRF Blog API
 
-### ♨️API Docs:
-[Go-to swagger docs](http://localhost:8000/swagger/)
+### ♨️API Docs: [Go-to swagger docs](http://localhost:8000/swagger/)
 
-## To run test:
-  `make test`
+## To run test: `make test`
 
 
 ### ⚒️ Tools:
 - DRF
 - Makefile
 - Python pipenv
+- Swagger
 
 # ⚙️ Setup
 
